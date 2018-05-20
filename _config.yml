@@ -6,7 +6,6 @@
 menu:
   Home: /
   Archives: archives
-  Categories: categories
   Tags: tags
   About: about
 rss: /atom.xml
@@ -22,11 +21,11 @@ favicon: css/images/favicon.ico
 # Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
 avatar: 
-  enable: false
+  enable: true
   width: 124
   height: 124
   bottom: 10
-  url: https://hexo.io/logo.svg
+  url: css/images/profile_pic.jpg
 
 
 # AboutPage background, support multiple images.
@@ -47,21 +46,17 @@ widgets:
 - search
 - social
 - recent_posts
-- category
 - tag
-- tagcloud
 - archive
 
 # Social Links
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/iTimeTraveler
-  Weibo: 
-  Twitter: 
-  Facebook: 
-  Google-plus: 
-  Instagram: 
+  Github: https://github.com/KrishnaCAmjuri
+  Twitter: https://twitter.com/krishna_amjuri
+  Linkedin: https://www.linkedin.com/in/krishna-chaitanya-amjuri-8563614a/
+  Stack-overflow: https://stackoverflow.com/users/2812054/krishnaca
 
 
 # Search
@@ -74,7 +69,7 @@ search:
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: 
 disqus_shortname: 
-livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+livere_shortname: 
 uyan_uid: 
 wumii: 
 
