@@ -1,11 +1,6 @@
-<% if (is_archive()){ %>
-  <div class="archives-tags-wrap"><blockquote><span><%= __('post_total_count', site.posts.length) %></span></blockquote>
-<% } %>
-
-
 <% if (is_current("archives/", true)){ %>
 
-	<!-- 完全显示 -->
+	<!-- Archive page -->
 	<% var last; %>
 	<% site.posts.sort('-date').map(function(post, i){ %>
 		<% var year = post.date.year(); %>
@@ -28,7 +23,7 @@
 	<% } %>
 <% } else { %>
 
-	<!-- 分页显示 -->
+	<!-- Month specific archive -->
 	<% var last; %>
 	<% page.posts.each(function(post, i){ %>
 		<% var year = post.date.year(); %>

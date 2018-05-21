@@ -1,8 +1,10 @@
 <% if (theme.social){ %>
   <div class="widget-wrap">
-    <h3 class="widget-title"><%= __('connect') %></h3>
-    <div class="widget widget_athemes_social_icons">
-
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+        <li class="active"><a><%= __('connect') %></a></li>
+     </ul>
+    <!-- <h3 class="widget-title"><%= __('connect') %></h3> -->
+    <div class="widget-wrap">
     	<ul class="clearfix widget-social-icons">   
     	<% Object.keys(theme.social).forEach(function(key) { %>
    			<li><a href="<%= theme.social[key] %>" title="<%=key.trim()%>"><i class="fa fa-<%= key.toLowerCase() %>" aria-hidden="true"></i></a></li> 

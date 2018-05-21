@@ -6,7 +6,7 @@
 menu:
   Home: /
   Archives: archives
-  Tags: tags
+  Projects: projects
   About: about
 rss: /atom.xml
 
