@@ -3,6 +3,21 @@
   @media mq-normal
     column(main-column)
 
+.widget-tag
+  color: color-sidebar-text
+  background: transparent
+  padding: 15px 0 0
+  a
+    color: #555
+    text-decoration: none
+    &:hover
+      color: color-link-hover
+      text-decoration: none
+  ul, ol, dl
+    ul, ol, dl
+      margin-left: 15px
+      list-style: disc
+
 .widget-title
   color: #ccc
   text-transform: uppercase
@@ -11,6 +26,15 @@
   line-height: 1em
   font-weight: bold
 
+.widget-tag
+  color: color-grey
+  ul, ol
+    li
+      display: inline-block
+      zoom:1
+      *display:inline
+      padding-right: .75em
+      
 .widget
   color: color-grey
   ul, ol

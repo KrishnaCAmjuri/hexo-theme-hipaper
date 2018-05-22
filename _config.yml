@@ -47,7 +47,7 @@ widgets:
 - social
 - recent_posts
 - tag
-- archive
+# - archive
 
 # Social Links
 # Key is the name of FontAwsome icon.

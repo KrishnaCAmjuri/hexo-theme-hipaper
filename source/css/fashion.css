@@ -253,6 +253,12 @@ object {
 ----------------------------------------------- */
 .site-header {
 	padding: 40px 0 20px;
+	/* position: fixed;
+    top: 0;
+	width: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);;
+	z-index: 200;
+	height: 175px; */
 	}
 .site-branding {
 	float: left;
@@ -590,6 +596,19 @@ object {
 	word-wrap: break-word;
 	}
 
+.tag-list-link a {
+		color: #333;
+		outline: none;
+		-webkit-transition: all 0.14s ease 0s; 
+		   -moz-transition: all 0.14s ease 0s; 
+			 -o-transition: all 0.14s ease 0s; 
+		}
+.tag-list-link a:hover,
+.tag-list-link a:focus,
+.tag-list-link a:active {
+		color: #1fa0ae;
+		}
+
 .entry-header {
 	margin: 0 0 1.25em;
 	text-align: center;
@@ -611,9 +630,9 @@ object {
 .entry-meta {
 	color: #a6a6a6;
 	font-size: .9em;
-	font-weight: 300;
+	/* font-weight: 300; */
 	font-family: Oswald,"Microsoft Yahei", Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	}
 .entry-meta a {
 	color: #a6a6a6;
@@ -1017,8 +1036,8 @@ ul.widget-tab-nav {
 	color: #a6a6a6;
 	font-size: 1.1em;
 	font-family: Oswald, "Microsoft Yahei", Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	/* text-transform: uppercase; */
+	letter-spacing: 1px;
 	line-height: 30px;
 	background: none;
 	border: none;
