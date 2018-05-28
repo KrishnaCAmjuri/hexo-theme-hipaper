@@ -9,7 +9,6 @@
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <%- partial('post/category') %> 
-      <%- partial('post/busuanzi-analytics',{index: index}) %>
     </div>
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -39,14 +38,15 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="entry-meta entry-footer">
-      <%- partial('post/category') %>
-      <%- partial('post/tag') %>
-      <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname)){ %>
-        <%- partial('comment') %>
-      <% } %>
-    </footer>
-    <hr class="entry-footer-hr">
+    <% if (!post.isAbout) { %>
+      <footer class="entry-meta entry-footer">
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+        <% if (!index && post.comments && (theme.duoshuo_shortname || theme.disqus_shortname || theme.uyan_uid || theme.wumii || theme.livere_shortname)){ %>
+          <%- partial('comment') %>
+        <% } %>
+      </footer>
+    <% } %>
   </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
